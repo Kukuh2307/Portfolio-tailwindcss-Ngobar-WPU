@@ -38,7 +38,9 @@ const html = document.querySelector("html");
 darkToggle.addEventListener("click", function () {
   if (darkToggle.checked) {
     html.classList.add("dark");
+    localStorage = "dark";
   } else {
     html.classList.remove("dark");
+    localStorage = "light";
   }
 });
